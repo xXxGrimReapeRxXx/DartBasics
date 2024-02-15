@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:katz_hotel/themenu.dart';
 
 void main() {
   runApp(MyApp());
@@ -30,39 +31,7 @@ class MyHomePage extends StatelessWidget {
         ),
         centerTitle: true,
       ),
-      drawer: Drawer(
-        child: ListView(
-          padding: EdgeInsets.zero,
-          children: [
-            const DrawerHeader(
-              decoration: BoxDecoration(
-                color: Color(222),
-              ),
-              child: Text("The Menu"),
-            ),
-            ListTile(
-              title: const Text("Creepy Spiders"),
-              onTap: () {
-                showImagePopup(context, 'assets/ketz_hello.jpg');
-                spiders_are_here();
-
-                //redirection to page with spiders
-              },
-              hoverColor: const Color.fromARGB(0, 221, 109, 4),
-              textColor: Colors.redAccent,
-            ),
-            ListTile(
-              title: const Text("Go see doctor Zalost?"),
-              onTap: () {
-                doctor_Zalost();
-                // redirection to the sad doctor
-              },
-              hoverColor: const Color.fromARGB(0, 221, 109, 4),
-              textColor: Colors.redAccent,
-            ),
-          ],
-        ),
-      ),
+      drawer: Drawer(child: KetzMenu(context)),
       body: const Center(
         child: Image(
           height: 35000,
@@ -75,11 +44,16 @@ class MyHomePage extends StatelessWidget {
   }
 
   void showImagePopup(BuildContext context, String imagePath) {
+    // String? picky;
+// if (context == y){
+//   picky == y
+// } to make logic that based on the context shows custom messege wether that be dr. zalost or spiders
+
     showDialog(
       context: context,
       builder: (BuildContext context) {
         return SimpleDialog(
-          title: const Text('Creepy Spiders'),
+          title: const Text("picky"),
           children: [
             Image(
               height: 30.0, // Adjust height as needed

@@ -61,7 +61,7 @@ flutter:
 
   assets:
     - assets/themesong.mp3
-    - assets/ketz_hello.jpg
+    - assets/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
