@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "300466326598",
+    "project_id": "basic-registration-firebase",
+    "storage_bucket": "basic-registration-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300466326598:android:95545a38354fd896a50e47",
+        "android_client_info": {
+          "package_name": "com.example.basic_registration"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwq_bY-QZ_1orHDfRlvS1wMaowiyXNaZg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
